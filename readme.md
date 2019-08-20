@@ -45,6 +45,7 @@ _three basic types_
 - Boolean types: 
 
 **_Variables_**
+
 `var <variable_name> <type>`
 
 `var <variable_name> <type> = <value>`
