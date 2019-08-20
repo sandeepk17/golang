@@ -109,7 +109,8 @@ func main() {
 `
 godoc fmt Println
 `
-- **constants**: variable whose value cannot be changed once assigned
+- **constants**: variable whose value cannot be changed once assigned.
+
 `
 package main
 import ("fmt")
