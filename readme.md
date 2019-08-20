@@ -46,7 +46,11 @@ _three basic types_
 
 **_Variables_**
 `var <variable_name> <type>`
+
 `var <variable_name> <type> = <value>`
+
 `var <variable_name> = <value>`
+
 _You can declare multiple variables with the syntax_
+
 `var <variable_name1>, <variable_name2>  = <value1>, <value2>`
