@@ -40,3 +40,13 @@ _three basic types_
     - complex64 – has float32 real and imaginary parts.
 
     - complex128 - has float32 real and imaginary parts.
+
+- String types: string concatenation, substring etc.
+- Boolean types: 
+
+**_Variables_**
+`var <variable_name> <type>`
+`var <variable_name> <type> = <value>`
+`var <variable_name> = <value>`
+_You can declare multiple variables with the syntax_
+`var <variable_name1>, <variable_name2>  = <value1>, <value2>`
