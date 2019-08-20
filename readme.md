@@ -105,13 +105,13 @@ func main() {
 ```
 
 
-- **Help** 
-`
+**_Help_** 
+```
 godoc fmt Println
-`
-- **constants**: variable whose value cannot be changed once assigned.
+```
+**_constants_**: variable whose value cannot be changed once assigned.
 
-`
+```
 package main
 import ("fmt")
 
@@ -122,17 +122,77 @@ func main() {
 	b = 30
 	fmt.Println(b)
 }
-`
+```
 
-- **Loops**
+**_Loops_**
 
-Loops
+- Loops
+    - **_For Loop_**
 Loops are used to execute a block of statements repeatedly based on a condition. 
 Most of the programming languages provide 3 types of loops - _for, while, do while_. But **Go supports only for loop**.
-_syntax_
+- _syntax_
 
-`
+```
 for initialisation_expression; evaluation_expression; iteration_expression{
    // one or more statement
 }
-`
+```
+Initialisation expression is execcuted first(and only once)
+Then, evaluation_expression is executed and if thats is True then the code is executed.
+
+iteration_expression is executed and the evaluation_expression is evaluated again and if its true the statement block gets executed again . this will continue until the evaluation_expression is false.
+
+```
+package main
+import "fmt"
+
+func main() {  
+var i int
+for i = 1; i <= 5; i++ {
+fmt.Println(i)
+    }
+}
+```
+    - **_If else_**
+- _syntax_
+
+```
+if condition{
+// statements1
+}else{
+// statements2
+}
+```
+condition is evaluated and if true statement1 is executed else statement2 will be executed.
+- **can also use _if statements without else also_ & _chained if else statements_**
+
+- **If example** : if the value is greater than 10 the statement inside block condition will not be executed.
+```
+package main
+import "fmt"
+
+func main() {  
+    var x = 50
+    if x < 10 {
+        //Executes if x < 10
+        fmt.Println("x is less than 10")
+    } 
+}
+```
+- **If-Else Example**: if block is false the the else block gets executed.
+```
+package main
+import "fmt"
+
+func main() {  
+    var x = 50
+    if x < 10 {
+        //Executes if x is less than 10
+        fmt.Println("x is less than 10")
+    } else {
+        //Executes if x >= 10
+        fmt.Println("x is greater than or equals 10")
+    }
+}
+
+```
